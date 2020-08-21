@@ -1,0 +1,14 @@
+from tkinder import *
+root=Tk()
+e=Entry(root,width=50)
+e.pack()
+e.insert(0,"enter the number:")
+
+def myclick():
+  hello="helo "+e.get()
+  mylabel=Label(root,text=hello)
+  mylabel.pack()
+mybutton=Button(root,texet="enter ",command=myclick)
+
+
+root.mainloop()
